@@ -1,0 +1,14 @@
+---
+title: Sensei - Teachers
+---
+
+<ul class="list-inline text-center" id="teachers">
+  <% ["davisjr2000", "anderchen", "ThierryMR","anariccetti"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-teachers" %>
+      <h3><%= gh_username.capitalize %></h3>
+      <h4><%= ["Math","Ruby","Cryptocurrency","UX/UI"].sample + " teacher" %></h4>
+      <a class="btn btn-primary">Have a class</a>
+    </li>
+  <% end %>
+</ul>
